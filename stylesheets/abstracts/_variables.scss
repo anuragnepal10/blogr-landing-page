@@ -1,0 +1,48 @@
+// COLORS
+
+$clr-primary: hsl(356, 100%, 66%);
+$clr-primary-light: hsl(355, 100%, 74%);
+$clr-secondary: hsl(208, 49%, 24%);
+
+$clr-neutral: hsl(0, 0%, 100%);
+$clr-inverted: hsl(207, 13%, 34%);
+
+$clr-footer: hsl(240, 10%, 16%);
+$clr-footer-text: hsl(240, 2%, 79%);
+
+// GRADIENTS
+
+$gra-header: linear-gradient(
+	90deg,
+	rgba(255, 143, 112, 1) 0%,
+	rgba(255, 61, 84, 1) 100%
+);
+$gra-middle: linear-gradient(
+	90deg,
+	rgba(44, 45, 63, 1) 0%,
+	rgba(63, 65, 100, 1) 100%
+);
+
+// FONT-FAMILY
+
+$ff-primary: 'Overpass', sans-serif;
+$ff-secondary: 'Ubuntu', sans-serif;
+
+// FONT-WEIGHTS
+
+$fw-primary-regular: 300;
+$fw-primary-bold: 600;
+
+$fw-secondary-regular: 400;
+$fw-secondary-normal: 500;
+$fw-secondary-bold: 700;
+
+// FONT-SIZES
+
+$fs-header-l: clamp(2rem, 1.3838rem + 2.6291vw, 3.75rem);
+$fs-header-m: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+$fs-header-m-fixed: 2rem;
+$fs-header-s: 1.75rem;
+
+$fs-body-m: 1rem;
+$fs-body-l: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
