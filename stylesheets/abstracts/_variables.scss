@@ -1,0 +1,65 @@
+// COLORS
+
+$clr-primary: hsl(356, 100%, 66%);
+$clr-primary-light: hsl(355, 100%, 74%);
+$clr-secondary: hsl(208, 49%, 24%);
+
+$clr-neutral: hsl(0, 0%, 100%);
+$clr-inverted: hsl(207, 13%, 34%);
+
+$clr-footer: hsl(240, 10%, 16%);
+$clr-footer-text: hsl(240, 2%, 79%);
+
+// GRADIENTS
+
+$gra-header: linear-gradient(
+	90deg,
+	rgba(255, 143, 112, 1) 0%,
+	rgba(255, 61, 84, 1) 100%
+);
+$gra-middle: linear-gradient(
+	90deg,
+	rgba(44, 45, 63, 1) 0%,
+	rgba(63, 65, 100, 1) 100%
+);
+
+// FONT-FAMILY
+
+$ff-primary: 'Overpass', sans-serif;
+$ff-secondary: 'Ubuntu', sans-serif;
+
+// FONT-WEIGHTS
+
+$fw-primary-regular: 300;
+$fw-primary-bold: 600;
+
+$fw-secondary-regular: 400;
+$fw-secondary-normal: 500;
+$fw-secondary-bold: 700;
+
+// FONT-SIZES
+
+$fs-header-l: clamp(2rem, 1.3838rem + 2.6291vw, 3.75rem);
+$fs-header-m: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+$fs-header-m-fixed: 2.25rem;
+$fs-header-s: 1.75rem;
+
+$fs-body-m: 1rem;
+$fs-body-l: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+
+// SPACE
+
+$gap-v-s: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+$gap-v-m: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+$gap-v-l: clamp(3rem, 2.1197rem + 3.7559vw, 5.5rem);
+$gap-v-xl: clamp(5rem, 3.2394rem + 7.5117vw, 10rem);
+
+$gap-m: 2.5rem;
+$gap-l: 3.5rem;
+$gap-xl: 8rem;
+$gap-xxl: 15rem;
+
+// OTHERS
+
+$img-size: clamp(4.6875rem, 4.1373rem + 2.3474vw, 6.25rem);
+$bdr-radius: 6rem;
