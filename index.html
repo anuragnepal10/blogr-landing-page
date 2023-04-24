@@ -19,8 +19,8 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
-  <script type="module" crossorigin src="/blogr-landing-page/assets/index-8397d1c5.js"></script>
-  <link rel="stylesheet" href="/blogr-landing-page/assets/index-3a51948f.css">
+  <script type="module" crossorigin src="/blogr-landing-page/assets/index-fec86558.js"></script>
+  <link rel="stylesheet" href="/blogr-landing-page/assets/index-3b5a02f0.css">
 </head>
 
 <body>
@@ -32,10 +32,10 @@
         <nav class="header-nav">
           <div class="nav-links-container">
             <div class="nav-links">
-              <a class="main-link">Product
+              <button class="main-link">Product
                 <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
                 <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
-              </a>
+              </button>
               <div class="sub-links">
                 <a href="" class="sub-link">Overview</a>
                 <a href="" class="sub-link">Pricing</a>
@@ -45,10 +45,10 @@
               </div>
             </div>
             <div class="nav-links">
-              <a class="main-link">Company
+              <button class="main-link">Company
                 <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
                 <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
-              </a>
+              </button>
               <div class="sub-links">
                 <a href="" class="sub-link">About</a>
                 <a href="" class="sub-link">Team</a>
@@ -56,11 +56,11 @@
                 <a href="" class="sub-link">Careers</a>
               </div>
             </div>
-            <div class="nav-links active">
-              <a class="main-link">Connect
+            <div class="nav-links">
+              <button class="main-link">Connect
                 <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
                 <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
-              </a>
+              </button>
               <div class="sub-links">
                 <a href="" class="sub-link">Contact</a>
                 <a href="" class="sub-link">Newsletter</a>
@@ -87,12 +87,14 @@
       </section>
     </div>
   </header>
-
+  <div class="container desktop"></div>
   <main>
     <h2>Designed for the future</h2>
     <section class="top">
       <img src="images/illustration-editor-mobile.svg" alt="" class="mobile">
-      <img src="images/illustration-editor-desktop.svg" alt="" class="desktop">
+      <div class="container desktop">
+        <img src="images/illustration-editor-desktop.svg" alt="" class="desktop">
+      </div>
       <div class="content">
         <h3>Introducing an extensible editor</h3>
         <p>
@@ -111,19 +113,21 @@
       </div>
     </section>
     <section class="middle">
-      <img src="images/illustration-phones.svg" alt="">
-      <div class="bg"></div>
-      <div class="content">
-        <h3>State of the Art Infrastructure</h3>
-        <p>
-          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
-          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-        </p>
+      <div class="wrapper">
+        <img src="images/illustration-phones.svg" alt="">
+        <div class="bg"></div>
+        <div class="content">
+          <h3>State of the Art Infrastructure</h3>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
       </div>
     </section>
     <section class="bottom">
       <img src="images/illustration-laptop-mobile.svg" alt="" class="mobile">
-      <img src="images/illustration-laptop-desktop.svg" alt="" class="desktop">
+      <div class="container desktop"><img src="images/illustration-laptop-desktop.svg" alt="" class="desktop"></div>
       <div class="content">
         <h3>Free, open, simple</h3>
         <p>
@@ -145,27 +149,29 @@
   </main>
 
   <footer>
-    <img src="images/logo.svg" alt="" class="logo">
-    <div class="footer-links">
-      <a class="main-link">Product</a>
-      <a href="" class="sub-link">Overview</a>
-      <a href="" class="sub-link">Pricing</a>
-      <a href="" class="sub-link">Marketplace</a>
-      <a href="" class="sub-link">Features</a>
-      <a href="" class="sub-link">Integrations</a>
-    </div>
-    <div class="footer-links">
-      <a class="main-link">Company</a>
-      <a href="" class="sub-link">About</a>
-      <a href="" class="sub-link">Team</a>
-      <a href="" class="sub-link">Blog</a>
-      <a href="" class="sub-link">Careers</a>
-    </div>
-    <div class="footer-links">
-      <a class="main-link">Connect</a>
-      <a href="" class="sub-link">Contact</a>
-      <a href="" class="sub-link">Newsletter</a>
-      <a href="" class="sub-link">LinkedIn</a>
+    <div class="wrapper">
+      <img src="images/logo.svg" alt="" class="logo">
+      <div class="footer-links">
+        <p class="main-link">Product</p>
+        <a href="" class="sub-link">Overview</a>
+        <a href="" class="sub-link">Pricing</a>
+        <a href="" class="sub-link">Marketplace</a>
+        <a href="" class="sub-link">Features</a>
+        <a href="" class="sub-link">Integrations</a>
+      </div>
+      <div class="footer-links">
+        <p class="main-link">Company</p>
+        <a href="" class="sub-link">About</a>
+        <a href="" class="sub-link">Team</a>
+        <a href="" class="sub-link">Blog</a>
+        <a href="" class="sub-link">Careers</a>
+      </div>
+      <div class="footer-links">
+        <p class="main-link">Connect</p>
+        <a href="" class="sub-link">Contact</a>
+        <a href="" class="sub-link">Newsletter</a>
+        <a href="" class="sub-link">LinkedIn</a>
+      </div>
     </div>
   </footer>
 
