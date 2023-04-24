@@ -41,8 +41,25 @@ $fw-secondary-bold: 700;
 
 $fs-header-l: clamp(2rem, 1.3838rem + 2.6291vw, 3.75rem);
 $fs-header-m: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
-$fs-header-m-fixed: 2rem;
+$fs-header-m-fixed: 2.25rem;
 $fs-header-s: 1.75rem;
 
 $fs-body-m: 1rem;
 $fs-body-l: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+
+// SPACE
+
+$gap-v-s: clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+$gap-v-m: clamp(3rem, 2.6479rem + 1.5023vw, 4rem);
+$gap-v-l: clamp(3rem, 2.1197rem + 3.7559vw, 5.5rem);
+$gap-v-xl: clamp(5rem, 3.2394rem + 7.5117vw, 10rem);
+
+$gap-m: 2.5rem;
+$gap-l: 3.5rem;
+$gap-xl: 8rem;
+$gap-xxl: 15rem;
+
+// OTHERS
+
+$img-size: clamp(4.6875rem, 4.1373rem + 2.3474vw, 6.25rem);
+$bdr-radius: 6rem;

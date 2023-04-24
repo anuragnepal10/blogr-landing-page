@@ -1,0 +1,26 @@
+@use '../abstracts/' as *;
+
+.btn {
+	// padding: 0.625rem 1.25rem;
+	border-radius: 2rem;
+	border: 1px solid $clr-neutral;
+	display: grid;
+	place-content: center;
+	width: 8.5rem;
+	height: 3rem;
+}
+
+.btn-transparent {
+	color: $clr-neutral;
+}
+
+.btn-filled {
+	background-color: $clr-neutral;
+	color: $clr-primary;
+}
+
+.btn-gradient {
+	border: none;
+	color: $clr-neutral;
+	background: $gra-header;
+}

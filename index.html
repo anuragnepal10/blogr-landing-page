@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>Frontend Mentor | Blogr</title>
 
@@ -26,62 +23,74 @@
 
 <body>
   <header>
-    <div class="logo-container"></div>
-    <i class="bars fa-solid fa-bars"></i>
-    <i class="xmarks fa-solid fa-xmark"></i>
-    <nav class="header-nav">
-      <div class="nav-links-container">
-        <div class="nav-links">
-          <a href="" class="main-link">Product <i class="angle fa-solid fa-angle-down"></i><i
-              class="angle fa-solid fa-angle-up"></i></a>
-          <div class="sub-links">
-            <a href="" class="sub-link">Overview</a>
-            <a href="" class="sub-link">Pricing</a>
-            <a href="" class="sub-link">Marketplace</a>
-            <a href="" class="sub-link">Features</a>
-            <a href="" class="sub-link">Integrations</a>
+    <div class="bg"></div>
+    <div class="wrapper">
+      <section class="top ">
+        <img src="images/logo.svg" alt="" class="logo">
+        <nav class="header-nav">
+          <div class="nav-links-container">
+            <div class="nav-links">
+              <a class="main-link">Product
+                <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
+                <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
+              </a>
+              <div class="sub-links">
+                <a href="" class="sub-link">Overview</a>
+                <a href="" class="sub-link">Pricing</a>
+                <a href="" class="sub-link">Marketplace</a>
+                <a href="" class="sub-link">Features</a>
+                <a href="" class="sub-link">Integrations</a>
+              </div>
+            </div>
+            <div class="nav-links">
+              <a class="main-link">Company
+                <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
+                <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
+              </a>
+              <div class="sub-links">
+                <a href="" class="sub-link">About</a>
+                <a href="" class="sub-link">Team</a>
+                <a href="" class="sub-link">Blog</a>
+                <a href="" class="sub-link">Careers</a>
+              </div>
+            </div>
+            <div class="nav-links active">
+              <a class="main-link">Connect
+                <img src="images/icon-arrow-dark.svg" alt="" class="arrow mobile">
+                <img src="images/icon-arrow-light.svg" alt="" class="arrow desktop">
+              </a>
+              <div class="sub-links">
+                <a href="" class="sub-link">Contact</a>
+                <a href="" class="sub-link">Newsletter</a>
+                <a href="" class="sub-link">LinkedIn</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="nav-links">
-          <a href="" class="main-link">Company <i class="angle fa-solid fa-angle-down"></i><i
-              class="angle fa-solid fa-angle-up"></i></a>
-          <div class="sub-links">
-            <a href="" class="sub-link">About</a>
-            <a href="" class="sub-link">Team</a>
-            <a href="" class="sub-link">Blog</a>
-            <a href="" class="sub-link">Careers</a>
+          <hr>
+          <div class="nav-btns">
+            <a href="" class="link">Login</a>
+            <a href="" class="btn btn-filled">Sign Up</a>
           </div>
+        </nav>
+        <img src="images/icon-hamburger.svg" alt="" class="bars toggler">
+        <img src="images/icon-close.svg" alt="" class="close toggler">
+      </section>
+      <section class="hero">
+        <h1 class="title">A modern publishing platform</h1>
+        <p class="subtitle">Grow your audience and build your online brand</p>
+        <div class="hero-btns">
+          <a href="" class="btn btn-filled">Start for Free</a>
+          <a href="" class="btn btn-transparent">Learn More</a>
         </div>
-        <div class="nav-links">
-          <a href="" class="main-link">Product <i class="angle fa-solid fa-angle-down"></i><i
-              class="angle fa-solid fa-angle-up"></i></a>
-          <div class="sub-links">
-            <a href="" class="sub-link">Connect</a>
-            <a href="" class="sub-link">Contact</a>
-            <a href="" class="sub-link">Newsletter</a>
-            <a href="" class="sub-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <div class="nav-btns">
-        <a href="" class="link">Login</a>
-        <a href="" class="btn btn-filled">Sign Up</a>
-      </div>
-    </nav>
-    <section class="hero">
-      <h1 class="title">A modern publishing platform</h1>
-      <p class="subtitle">Grow your audience and build your online brand</p>
-      <div class="hero-btns">
-        <a href="" class="btn btn-filled">Start for Free</a>
-        <a href="" class="btn btn-transparent">Learn More</a>
-      </div>
-    </section>
+      </section>
+    </div>
   </header>
 
   <main>
     <h2>Designed for the future</h2>
     <section class="top">
-      <div class="img-container"></div>
+      <img src="images/illustration-editor-mobile.svg" alt="" class="mobile">
+      <img src="images/illustration-editor-desktop.svg" alt="" class="desktop">
       <div class="content">
         <h3>Introducing an extensible editor</h3>
         <p>
@@ -100,7 +109,8 @@
       </div>
     </section>
     <section class="middle">
-      <div class="img-container"></div>
+      <img src="images/illustration-phones.svg" alt="">
+      <div class="bg"></div>
       <div class="content">
         <h3>State of the Art Infrastructure</h3>
         <p>
@@ -110,17 +120,20 @@
       </div>
     </section>
     <section class="bottom">
-      <div class="img-container"></div>
+      <img src="images/illustration-laptop-mobile.svg" alt="" class="mobile">
+      <img src="images/illustration-laptop-desktop.svg" alt="" class="desktop">
       <div class="content">
         <h3>Free, open, simple</h3>
         <p>
           Blogr is a free and open source application backed by a large community of helpful developers. It supports
-          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+          features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+          tools,
           and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
         </p>
         <h3>Powerful tooling</h3>
         <p>
-          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+          Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment
+          a
           breeze,
           but
           capable of producing even the most complicated sites.
@@ -130,9 +143,9 @@
   </main>
 
   <footer>
-    <div class="logo-container"></div>
+    <img src="images/logo.svg" alt="" class="logo">
     <div class="footer-links">
-      <a href="" class="main-link">Product</a>
+      <a class="main-link">Product</a>
       <a href="" class="sub-link">Overview</a>
       <a href="" class="sub-link">Pricing</a>
       <a href="" class="sub-link">Marketplace</a>
@@ -140,21 +153,21 @@
       <a href="" class="sub-link">Integrations</a>
     </div>
     <div class="footer-links">
-      <a href="" class="main-link">Company</a>
+      <a class="main-link">Company</a>
       <a href="" class="sub-link">About</a>
       <a href="" class="sub-link">Team</a>
       <a href="" class="sub-link">Blog</a>
       <a href="" class="sub-link">Careers</a>
     </div>
     <div class="footer-links">
-      <a href="" class="main-link">Connect</a>
+      <a class="main-link">Connect</a>
       <a href="" class="sub-link">Contact</a>
       <a href="" class="sub-link">Newsletter</a>
       <a href="" class="sub-link">LinkedIn</a>
     </div>
   </footer>
 
-  <script type="module" src="main.js"></script>
+  <script type="module" src="/main.js"></script>
 
 </body>
 

@@ -1,0 +1,6 @@
+@use '../abstracts/' as *;
+
+.wrapper {
+	@include wrapper;
+	height: 100%;
+}
