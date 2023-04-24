@@ -1,14 +1,28 @@
 @use '../abstracts/' as *;
 
 main {
+	@include mq-large {
+		// position: relative;
+	}
+
 	h2,
 	h3,
 	p {
 		@include wrapper;
+
+		@include mq-large {
+			@include wrapper-remove;
+		}
 	}
 
 	h2 {
 		margin-bottom: $gap-v-l;
+
+		@include mq-large {
+			width: 100%;
+			position: absolute;
+			bottom: -9rem;
+		}
 	}
 
 	h3 {
@@ -20,7 +34,48 @@ main {
 		margin-inline: auto;
 	}
 
-	.mobile {
+	.top,
+	.bottom {
+		@include mq-large {
+			display: flex;
+			flex-direction: row-reverse;
+			align-items: center;
+			justify-content: center;
+			@include wrapper-left;
+			overflow: hidden;
+		}
+
+		.container {
+			width: 50%;
+
+			img {
+				position: relative;
+				right: calc(0rem - $img-gap);
+				max-width: unset;
+				width: $img-size-2;
+			}
+		}
+
+		.content {
+			@include mq-large {
+				width: 50%;
+			}
+		}
+	}
+
+	.bottom {
+		@include mq-large {
+			flex-direction: row;
+			@include wrapper-right;
+		}
+
+		.container {
+			img {
+				right: 0;
+				width: $img-size-3;
+				left: calc(0rem - $img-gap-2);
+			}
+		}
 	}
 
 	.middle {
@@ -29,8 +84,29 @@ main {
 		margin-bottom: 3rem;
 		padding-bottom: 7rem;
 
+		@include mq-large {
+			margin-top: 3rem;
+			margin-bottom: 1rem;
+			padding-bottom: 0;
+		}
+
+		.wrapper {
+			@include wrapper-remove;
+			@include mq-large {
+				@include wrapper;
+				display: flex;
+				align-items: center;
+			}
+		}
+
 		img {
 			width: min(100%, 375px);
+
+			@include mq-large {
+				width: $img-size-4;
+				position: relative;
+				left: -2rem;
+			}
 		}
 
 		.bg {
@@ -43,6 +119,12 @@ main {
 			z-index: -1;
 			border-top-right-radius: $bdr-radius;
 			border-bottom-left-radius: $bdr-radius;
+
+			@include mq-large {
+				height: 60%;
+				bottom: unset;
+				left: 0;
+			}
 		}
 
 		.bg::before {
@@ -58,6 +140,9 @@ main {
 		.content {
 			width: 100%;
 			color: $clr-neutral;
+
+			@include mq-large {
+			}
 		}
 
 		h3 {

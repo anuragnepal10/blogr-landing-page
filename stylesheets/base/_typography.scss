@@ -42,6 +42,10 @@ a {
 
 footer {
 	font-size: $fs-body-l;
+
+	@include mq-large {
+		font-size: $fs-body-m;
+	}
 }
 
 // Colors

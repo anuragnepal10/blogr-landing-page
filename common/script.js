@@ -11,6 +11,11 @@ navToggler.forEach((el) =>
 
 navLinkToggler.forEach((el, togglerIndex) =>
 	el.addEventListener('click', () => {
+		navLinksEl.forEach((el, index) => {
+			if (togglerIndex !== index) {
+				el.classList.remove('active')
+			}
+		})
 		navLinksEl[togglerIndex].classList.toggle('active')
 	})
 )

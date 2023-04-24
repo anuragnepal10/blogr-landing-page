@@ -1,4 +1,33 @@
+@use './variables' as *;
+
 @mixin wrapper {
 	width: min(1100px, 85vw);
 	margin-inline: auto;
+}
+
+@mixin wrapper-remove {
+	width: unset;
+	margin-inline: 0;
+}
+
+@mixin wrapper-left {
+	padding-left: max(7.5vw, calc((100vw - 1100px) / 2));
+}
+
+@mixin wrapper-right {
+	padding-right: max(7.5vw, calc((100vw - 1100px) / 2));
+}
+
+@mixin mq-large {
+	@media (min-width: $b-large) {
+		@content;
+	}
+}
+
+@mixin hover {
+	&:hover {
+		@media (hover: hover) {
+			@content;
+		}
+	}
 }

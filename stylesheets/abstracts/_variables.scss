@@ -59,7 +59,21 @@ $gap-l: 3.5rem;
 $gap-xl: 8rem;
 $gap-xxl: 15rem;
 
+// BREAKPOINTS
+
+$b-large: 1024px;
+
+// SHADOWS
+
+$shd-1: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+	rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
 // OTHERS
 
-$img-size: clamp(4.6875rem, 4.1373rem + 2.3474vw, 6.25rem);
 $bdr-radius: 6rem;
+$img-size: clamp(4.6875rem, 4.1373rem + 2.3474vw, 6.25rem);
+$img-size-2: clamp(50rem, 12.5rem + 41.6667vw, 62.5rem);
+$img-size-3: clamp(56.25rem, 18.75rem + 41.6667vw, 68.75rem);
+$img-size-4: clamp(23.4375rem, -6.8702rem + 47.3558vw, 35.75rem);
+$img-gap: clamp(5rem, -12.1429rem + 26.7857vw, 20rem);
+$img-gap-2: clamp(30rem, -30rem + 66.6667vw, 50rem);

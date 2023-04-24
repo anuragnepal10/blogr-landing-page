@@ -12,15 +12,20 @@
 
 .btn-transparent {
 	color: $clr-neutral;
+
+	@include hover {
+		background-color: $clr-neutral;
+		color: $clr-primary;
+	}
 }
 
 .btn-filled {
 	background-color: $clr-neutral;
 	color: $clr-primary;
-}
 
-.btn-gradient {
-	border: none;
-	color: $clr-neutral;
-	background: $gra-header;
+	@include hover {
+		border: none;
+		background-color: rgba($clr-neutral, 0.3);
+		color: $clr-neutral;
+	}
 }

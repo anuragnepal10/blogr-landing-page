@@ -5,6 +5,10 @@ header {
 		position: relative;
 		.close {
 			display: block;
+
+			@include mq-large {
+				display: none;
+			}
 		}
 
 		.header-nav {
@@ -20,6 +24,12 @@ header {
 		.close {
 			display: none;
 		}
+
+		.bars {
+			@include mq-large {
+				display: none;
+			}
+		}
 		.header-nav {
 			overflow: scroll;
 			@include wrapper;
@@ -32,29 +42,70 @@ header {
 			z-index: 1;
 			border-radius: 0.5rem;
 			padding: 2rem 1.5rem;
-			box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-				rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+			box-shadow: $shd-1;
 			flex-direction: column;
 			gap: 2rem;
+
+			@include mq-large {
+				display: flex;
+				position: static;
+				height: auto;
+				top: unset;
+				z-index: 0;
+				border-radius: 0;
+				padding: none;
+				box-shadow: none;
+				background: transparent;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				overflow: visible;
+			}
 
 			hr {
 				border: none;
 				border-top: 2px solid;
 				border-color: rgba($clr-footer-text, 0.5);
+
+				@include mq-large {
+					display: none;
+				}
 			}
 
-			a:not(.btn) {
+			.main-link,
+			.sub-link,
+			.link {
 				font-family: $ff-primary;
 				color: $clr-secondary;
+
+				@include mq-large {
+					font-family: $ff-secondary;
+					color: unset;
+				}
 			}
 
 			.main-link,
 			.link {
 				font-size: 1.125rem;
+				@include mq-large {
+					color: $clr-neutral;
+				}
+				@include hover {
+					text-decoration: underline;
+				}
 			}
 
 			.link {
 				font-weight: $fw-primary-bold;
+			}
+
+			.sub-link {
+				@include mq-large {
+					color: black;
+				}
+				@include hover {
+					font-weight: $fw-secondary-bold;
+				}
 			}
 
 			.nav-links-container {
@@ -62,11 +113,20 @@ header {
 				flex-direction: column;
 				gap: 1.5rem;
 
+				@include mq-large {
+					flex-direction: row;
+					gap: 3rem;
+				}
+
 				.nav-links {
 					display: flex;
 					flex-direction: column;
 					gap: 1rem;
 					align-items: center;
+
+					@include mq-large {
+						position: relative;
+					}
 				}
 
 				.nav-links.active {
@@ -87,6 +147,10 @@ header {
 					right: 0;
 					top: 50%;
 					transform: translate(150%, -50%);
+
+					@include mq-large {
+						transform: translate(175%, -50%);
+					}
 				}
 
 				.sub-links {
@@ -99,6 +163,16 @@ header {
 					background: #000;
 					border-radius: 0.25rem;
 					background-color: rgba($clr-footer-text, 0.5);
+
+					@include mq-large {
+						width: 175px;
+						position: absolute;
+						top: 3rem;
+						left: -1.5rem;
+						background-color: $clr-neutral;
+						padding: 1.5rem;
+						box-shadow: $shd-1;
+					}
 				}
 
 				.sub-link {
@@ -112,9 +186,25 @@ header {
 				flex-direction: column;
 				align-items: center;
 
-				.btn {
+				@include mq-large {
+					flex-direction: row;
+					gap: 2rem;
+				}
+
+				.btn-filled {
 					background: $gra-header;
 					color: $clr-neutral;
+					border: none;
+
+					@include mq-large {
+						background: $clr-neutral;
+						color: $clr-primary;
+
+						@include hover {
+							background: rgba($clr-neutral, 0.3);
+							color: $clr-neutral;
+						}
+					}
 				}
 			}
 		}
